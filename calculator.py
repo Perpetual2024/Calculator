@@ -8,6 +8,8 @@ def mul(x,y):
     return x*y
 
 def div(x,y):
+    if y == 0:
+        return "Error: Division by zero is not allowed"
     return x/y
 
 def menu():
@@ -32,4 +34,10 @@ def  main():
             print(num1,"*",num2,"=",mul(num1,num2))
 
         elif choice == "4":
-            
+            print(num1,"/",num2,"=",div(num1,num2))  
+            break
+        elif choice == "5":
+            print("Exiting the program")
+
+        else:
+            print("Invalid choice. Please try again.")
