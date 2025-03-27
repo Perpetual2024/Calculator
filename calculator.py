@@ -12,20 +12,19 @@ def div(x,y):
         return "Error: Division by zero is not allowed"
     return x/y
 
-def menu():
-    print("\nPlease select an option")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-    print("5. Exit")
 
-def  main():
-    while True:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        menu()
+print ("Simple Calculator")
+while True:
+        print("\nPlease select an option")
+        print("1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+        print("4. Division")
+        print("5. Exit")
         choice = input("Enter your choice: ")
+        num1 = int(input("Enter first number: "))
+        num2 = int(input("Enter second number: "))
+       
         if choice == "1":
             print(num1,"+",num2,"=",sum(num1,num2))
         elif choice == "2":
@@ -42,5 +41,3 @@ def  main():
         else:
             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__" :  
-    main()   
