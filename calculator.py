@@ -26,14 +26,14 @@ while True:
         num2 = int(input("Enter second number: "))
        
         if choice == "1":
-            print(num1,"+",num2,"=",sum(num1,num2))
+            print("Result is: ",num1,"+",num2,"=",sum(num1,num2))
         elif choice == "2":
-            print(num1,"-",num2,"=",sub(num1,num2))
+            print("Result is: ",num1,"-",num2,"=",sub(num1,num2))
         elif choice == "3":
-            print(num1,"*",num2,"=",mul(num1,num2))
+            print("Result is: ",num1,"*",num2,"=",mul(num1,num2))
 
         elif choice == "4":
-            print(num1,"/",num2,"=",div(num1,num2))  
+            print("Result is: ",num1,"/",num2,"=",div(num1,num2))  
             break
         elif choice == "5":
             print("Exiting the program")
